@@ -25,4 +25,3 @@ for cle in test:
     print (cle)
 
 for valeur in test.values():
-    print (valeur)
