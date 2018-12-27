@@ -11,17 +11,82 @@ print ("test")
 class DicoOrdonne:
 
     def __init__(self, base = {}, **data):
+        self.cle = []
+        self.data = []
 
         for cle in base:
+            self.cle.append(cle)
 
         for values in base.values():
+            self.data.append(values)
+
+    def __setitem__(self, key, value):
+
+        i=0
+        exist = False
+        for cle in self.cle:
+            if key == self.cle[i]:
+                exist = True
+                break
+            else:
+                i += 1
+                exist = False
+        if exist == True:
+            self.data [i]= value
+        else:
+            self.cle.append(key)
+            self.data.append(value)
+
+    def __getitem__(self, item):
+
+        i=0
+        for cle in self.cle:
+            if item == self.cle[i]:
+                exist = True
+                break
+            else:
+                i+=1
+                exist = False
+
+        if exist == True:
+            print ("la valeur de {} est égal à {}".format(self.cle[i], self.data[i]))
+        else:
+            print("Erreur, l'objet {} ne contient pas la clé {}".format(self, item))
 
 
+            print ()
+
+
+
+
+test2= DicoOrdonne({"pomme":10})
+test2.cle
+test2.data
+test2["pomme"]=20
+test2["tomate"]=3
+test2 ["tomate"]
 
 
 test= {"pomme" : 5, "poire" : 10}
 test
+
+
+
 for cle in test:
     print (cle)
 
 for valeur in test.values():
+    print (valeur)
+i=0
+for key in test2.cle:
+    if key == test2.cle[i]:
+        exist = True
+        break
+    else:
+        i += 1
+        exist = False
+if exist == True:
+    test2.data[i] = value
+else:
+    test2.cle.append(key)
+    test2.data.append(value)
