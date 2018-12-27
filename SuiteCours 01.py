@@ -56,6 +56,18 @@ class DicoOrdonne:
 
             print ()
 
+    def __repr__(self):
+        backbone = ""
+        debut = "{"
+        fin = "}"
+        i=0
+        l= len(self.cle)
+        for cle in self.cle:
+        if i=0:
+            backbone="{}{}: {}".format(debut, self.cle[i], self.data[i])
+        elif i!=0 and not == l:
+
+
 
 
 
