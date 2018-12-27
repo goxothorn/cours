@@ -11,14 +11,10 @@ print ("test")
 class DicoOrdonne:
 
     def __init__(self, base = {}, **data):
-        self.key = []
-        self.value = []
 
         for cle in base:
-            self.key.append(cle)
 
         for values in base.values():
-            self.value.append(values)
 
 
 
