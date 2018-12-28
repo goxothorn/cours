@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b7102fbc-2096-4bf8-a1b0-c6c89d3a3968" name="Default Changelist" comment="" />
+    <list default="true" id="b7102fbc-2096-4bf8-a1b0-c6c89d3a3968" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SuiteCours 01.py" beforeDir="false" afterPath="$PROJECT_DIR$/SuiteCours 01.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,10 +15,11 @@
     <session id="-82254775">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.176" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.open.time.3" value="1" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -30,27 +34,26 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="Python Console" value="562" />
-          <entry key="py" value="1469" />
+          <entry key="Python Console" value="646" />
+          <entry key="py" value="1515" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="2031" />
+          <entry key="Python" value="2161" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/SuiteCours 01.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="580">
-              <caret line="69" lean-forward="true" selection-start-line="69" selection-end-line="69" />
+            <state relative-caret-position="777">
+              <caret line="94" column="16" lean-forward="true" selection-start-line="94" selection-start-column="16" selection-end-line="94" selection-end-column="16" />
               <folding>
-                <marker date="1545928274051" expanded="true" signature="97:102" ph="..." />
-                <marker date="1545928274051" expanded="true" signature="200:290" ph="..." />
+                <marker date="1545985881997" expanded="true" signature="97:102" ph="..." />
               </folding>
             </state>
           </provider>
@@ -59,7 +62,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/.PyCharmCE2018.2/system/python_stubs/-1323056820/builtins.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="484">
+            <state relative-caret-position="13498">
               <caret line="794" column="8" selection-start-line="794" selection-start-column="8" selection-end-line="794" selection-end-column="8" />
             </state>
           </provider>
@@ -115,7 +118,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$USER_HOME$/AppData/Local/Programs/Git/cmd/git.exe" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RunDashboard">
@@ -200,7 +203,7 @@
     <frame x="-8" y="-8" width="2576" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13513513" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13593005" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -225,21 +228,20 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/.PyCharmCE2018.2/system/python_stubs/-1323056820/builtins.py">
+    <entry file="file://$PROJECT_DIR$/SuiteCours 01.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="794" column="8" selection-start-line="794" selection-start-column="8" selection-end-line="794" selection-end-column="8" />
+        <state relative-caret-position="777">
+          <caret line="94" column="16" lean-forward="true" selection-start-line="94" selection-start-column="16" selection-end-line="94" selection-end-column="16" />
+          <folding>
+            <marker date="1545985881997" expanded="true" signature="97:102" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SuiteCours 01.py">
+    <entry file="file://$USER_HOME$/.PyCharmCE2018.2/system/python_stubs/-1323056820/builtins.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="580">
-          <caret line="69" lean-forward="true" selection-start-line="69" selection-end-line="69" />
-          <folding>
-            <marker date="1545928274051" expanded="true" signature="97:102" ph="..." />
-            <marker date="1545928274051" expanded="true" signature="200:290" ph="..." />
-          </folding>
+        <state relative-caret-position="13498">
+          <caret line="794" column="8" selection-start-line="794" selection-start-column="8" selection-end-line="794" selection-end-column="8" />
         </state>
       </provider>
     </entry>

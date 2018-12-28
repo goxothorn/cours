@@ -61,11 +61,19 @@ class DicoOrdonne:
         debut = "{"
         fin = "}"
         i=0
-        l= len(self.cle)
+        l= len(self.cle)-1
         for cle in self.cle:
-        if i=0:
+        if i == 0:
             backbone="{}{}: {}".format(debut, self.cle[i], self.data[i])
-        elif i!=0 and not == l:
+            i += 1
+        elif i != 0 and i != l:
+            backbone = "{}, {}: {}".format(backbone, self.cle[i], self.data[i])
+            i += 1
+        elif i == l:
+            backbone = "{}, {}: {}{}".format(backbone, self.cle[i], self.data[i], fin)
+            i += 1
+
+        return backbone
 
 
 
@@ -77,7 +85,7 @@ test2.data
 test2["pomme"]=20
 test2["tomate"]=3
 test2 ["tomate"]
-
+test2
 
 test= {"pomme" : 5, "poire" : 10}
 test
