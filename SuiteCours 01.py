@@ -66,6 +66,9 @@ class DicoOrdonne:
         if i == 0:
             backbone="{}{}: {}".format(debut, self.cle[i], self.data[i])
             i += 1
+        elif i == 0 and l == 0:
+            backbone = "{}{}: {}{}".format(debut, self.cle[i], self.data[i], fin)
+            i += 1
         elif i != 0 and i != l:
             backbone = "{}, {}: {}".format(backbone, self.cle[i], self.data[i])
             i += 1
@@ -74,6 +77,37 @@ class DicoOrdonne:
             i += 1
 
         return backbone
+
+    def __add__(self, other):
+        type_other = type (other)
+        if type_other != DicoOrdonne:
+            typeOk = False
+            print("le type de l'objet à ajouter n'est pas bon, l'objet doit être un DicoOrdonne")
+        else:
+            typeOk = True
+
+        if typeOk == True:
+            i = 0
+            for cle in other.cle:
+                self.cle.append(other.cle[i])
+                self.data.append(other.data[i])
+                i+=1
+        else:
+            print("error type 2em objet n'est pas le meme que type 1er objet")
+
+    def __len__(self):
+        lenght = len(self.cle)
+        return lenght
+
+    def __delitem__(self, key):
+        i = 0
+        for cle in self.cle:
+             if key == self.cle[i]:
+                del self.cle[i]
+                del self.data[i]
+            else:
+                i += 1
+
 
 
 
@@ -86,7 +120,11 @@ test2["pomme"]=20
 test2["tomate"]=3
 test2 ["tomate"]
 test2
-
+test3= DicoOrdonne()
+test3["courgette"]=10
+test3["oignon"]=15
+test3
+test4 = test2 + test3
 test= {"pomme" : 5, "poire" : 10}
 test
 
@@ -110,3 +148,9 @@ if exist == True:
 else:
     test2.cle.append(key)
     test2.data.append(value)
+
+def intervalle (inf, sup):
+    inf +=1
+    while inf < sup:
+        yield inf
+        inf +=1
