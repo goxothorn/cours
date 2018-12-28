@@ -54,8 +54,6 @@ class DicoOrdonne:
             print("Erreur, l'objet {} ne contient pas la clé {}".format(self, item))
 
 
-            print ()
-
     def __repr__(self):
         backbone = ""
         debut = "{"
@@ -63,7 +61,7 @@ class DicoOrdonne:
         i=0
         l= len(self.cle)-1
         for cle in self.cle:
-        if i == 0:
+        if i == 0 and l != 0:
             backbone="{}{}: {}".format(debut, self.cle[i], self.data[i])
             i += 1
         elif i == 0 and l == 0:
@@ -102,11 +100,14 @@ class DicoOrdonne:
     def __delitem__(self, key):
         i = 0
         for cle in self.cle:
-             if key == self.cle[i]:
+            if key == self.cle[i]:
                 del self.cle[i]
                 del self.data[i]
+                break
             else:
                 i += 1
+        return self
+
 
 
 
